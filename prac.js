@@ -115,27 +115,3 @@
 // } else {
 //   let yearsLeft = 18 - age;
 //   console.log(`You are left with ${yearsLeft} years to drive.`);
-// }
-
-let year=prompt("enter your age: ");
-let ages=58
-let yearold=ages-year
-
-console.log("you are ${yearold} year older than me")
-// Get the user's age as input
-let yourAge = prompt("Enter your age:");
-
-// Convert the input to a number
-yourAge = Number(yourAge);
-
-// Define "myAge"
-let myAge = 30;  // You can modify this value based on your actual age
-
-if (yourAge > myAge) {
-  console.log("You are older than me.");
-} else if (yourAge < myAge) {
-  let ageDifference = myAge - yourAge;
-  console.log(`You are ${ageDifference} years younger than me.`);
-} else {
-  console.log("We are the same age.");
-}
