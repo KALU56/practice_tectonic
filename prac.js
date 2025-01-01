@@ -53,45 +53,89 @@
 // console.log(words.length); // Output the number of words
 
 
-const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey'];
+// const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey'];
 
-// Add 'Meat' at the beginning if it's not already added
-if (!shoppingCart.includes('Meat')) {
-  shoppingCart.unshift('Meat');
-}
-if (!shoppingCart.includes('kal')){
-  shoppingCart.unshift('kal')
-}
+// // Add 'Meat' at the beginning if it's not already added
+// if (!shoppingCart.includes('Meat')) {
+//   shoppingCart.unshift('Meat');
+// }
+// if (!shoppingCart.includes('kal')){
+//   shoppingCart.unshift('kal')
+// }
 
-// Add 'Sugar' at the end if it's not already added
-if (!shoppingCart.includes('Sugar')) {
-  shoppingCart.push('Sugar');
-}
-if (!shoppingCart.includes('yab')){
-  shoppingCart.push('yab')
-}
+// // Add 'Sugar' at the end if it's not already added
+// if (!shoppingCart.includes('Sugar')) {
+//   shoppingCart.push('Sugar');
+// }
+// if (!shoppingCart.includes('yab')){
+//   shoppingCart.push('yab')
+// }
 
-// Remove 'Honey' if allergic
-const isAllergicToHoney = true; // Set to true if allergic
-if (isAllergicToHoney) {
-  const honeyIndex = shoppingCart.indexOf('Honey');
-  if (honeyIndex !== -1) {
-    shoppingCart.splice(honeyIndex, 1);
-  }
-}
+// // Remove 'Honey' if allergic
+// const isAllergicToHoney = true; // Set to true if allergic
+// if (isAllergicToHoney) {
+//   const honeyIndex = shoppingCart.indexOf('Honey');
+//   if (honeyIndex !== -1) {
+//     shoppingCart.splice(honeyIndex, 1);
+//   }
+// }
 
-// Modify 'Tea' to 'Green Tea'
-const teaIndex = shoppingCart.indexOf('Tea');
-if (teaIndex !== -1) {
-  shoppingCart[teaIndex] = 'Green Tea';
-}
+// // Modify 'Tea' to 'Green Tea'
+// const teaIndex = shoppingCart.indexOf('Tea');
+// if (teaIndex !== -1) {
+//   shoppingCart[teaIndex] = 'Green Tea';
+// }
 
-console.log(shoppingCart);
-const countries =['usa','ethiopa','germany','brazil']
-if (countries.includes('ethio')){
-  console.log('ethiopan');
+// console.log(shoppingCart);
+// const countries =['usa','ethiopa','germany','brazil']
+// if (countries.includes('ethio')){
+//   console.log('ethiopan');
+// }
+// else{
+//   countries.push('ethio')
+// }
+// console.log(countries)
+
+
+// const age = prompt("enter your age: ");
+// age=Number(age)
+// if (age >= 18){
+//   console.log("you are old enough to drive")
+// }else{
+//   const yearleft = 18 -age;
+//   console.log("you left ${yearleft}years to drive")
+// }
+// let age = prompt("Enter your age:");
+
+// // Convert the input to a number
+// age = Number(age);
+
+// if (age >= 18) {
+//   console.log("You are old enough to drive.");
+// } else {
+//   let yearsLeft = 18 - age;
+//   console.log(`You are left with ${yearsLeft} years to drive.`);
+// }
+
+let year=prompt("enter your age: ");
+let ages=58
+let yearold=ages-year
+
+console.log("you are ${yearold} year older than me")
+// Get the user's age as input
+let yourAge = prompt("Enter your age:");
+
+// Convert the input to a number
+yourAge = Number(yourAge);
+
+// Define "myAge"
+let myAge = 30;  // You can modify this value based on your actual age
+
+if (yourAge > myAge) {
+  console.log("You are older than me.");
+} else if (yourAge < myAge) {
+  let ageDifference = myAge - yourAge;
+  console.log(`You are ${ageDifference} years younger than me.`);
+} else {
+  console.log("We are the same age.");
 }
-else{
-  countries.push('ethio')
-}
-console.log(countries)
